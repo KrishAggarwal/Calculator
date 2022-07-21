@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: none;
+}
+
+html,
+body {
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: hsla(307, 43%, 96%, 0.3);
+
+}
+
+.main {
+    height: 20vh;
+}
+
+.wrapper {
+    height: 80vh;
+}
+
+
+.header {
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    background: #F9EFF7;
+    color: #c300ff;
+    height: 50%;
+}
+
+.greetDiv {
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    background: rgba(121, 255, 204, .1);
+    padding: 15px 0px;
+    color: #c300ff;
+    font-size: 30px;
+    height: 50%;
+}
+
+i{
+    margin-bottom:8px;
+}
+#night,
+#day {
+    border: none;
+    background: transparent;
+}
+
+#night {
+    display: none;
+}
+
+#day {
+    color: yellow;
+}
+
+#showHistory{
+    display: none;
+}
+
+button {
+    margin: auto;
+    font-size: 18px;
+    border-radius: 4px;
+    height: 100% !important;
+}
+
+.input {
+    background: #F9EFF7;
+    height: 20%;
+}
+
+input {
+    height: 50%;
+    background: transparent;
+    border: none;
+    font-size: 25px;
+    outline: none;
+    word-wrap: break-word !important;
+    word-break: break-all;
+    hyphens: auto;
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#emoji {
+    visibility: hidden;
+}
+
+.textPad {
+    background: #F9EFF7;
+    border: none;
+    height: 80%;
+}
+
+.function {
+    text-align: center;
+    padding: 3px;
+}
+
+.row1,
+.row2,
+.row3,
+.row4,
+.row5,
+.row6 {
+    height: 20%;
+}
+
+/* .row1 .function .fButton {
+    background-color: #fffcff;
+} */
+
+.function .fButton {
+    background-color: #fcf2ff;
+    width: 100%;
+    border: none;
+    box-shadow: 0 .5px rgb(194, 194, 194);
+}
+
+.function .equal {
+    background-color: rgb(0, 105, 186);
+    color: white;
+    width: 100%;
+    border: none;
+    box-shadow: 0 .8px rgb(194, 194, 194);
+}
+
+.number {
+    text-align: center;
+    padding: 3px;
+
+}
+
+.number .nButton {
+    background-color: white;
+    width: 100%;
+    border: none;
+    box-shadow: 0 .8px rgb(194, 194, 194);
+}
+
+@media screen and (max-width:576px) {
+    .greetDiv {
+        font-size: 20px;
+    }
+
+    #day,
+    #night {
+        padding: 0px;
+    }
+    #showHistory{
+        display: block;
+    }
+    #history {
+        display: none;
+        position: absolute;
+        top:100%;
+    }
+}
+
+button:focus,
+.inputWrapper input:focus {
+    outline: none;
+
+}
+
+.textPad button:active {
+    box-shadow: 0 1px #666;
+    transform: translateY(1px);
+}
+
+.fButton:hover,
+.row1 .fButton:hover {
+    background-color: rgb(255, 242, 255);
+
+}
+
+.nButton:hover {
+    background-color: rgba(252, 242, 255, .7);
+}
+
+.equal:hover {
+    background: rgba(0, 105, 186, .8);
+}
+
+.history {
+    background: #F9EFF7;
+    border-left: 3px dashed #ffbdf3;
+}
+.history p{
+    margin: 10px;
+    font-size:25px;
+}

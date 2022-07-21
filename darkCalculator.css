@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+html,
+body {
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.main {
+    height: 20vh;
+}
+
+.wrapper {
+    height: 80vh;
+}
+
+.header {
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.85);
+    color: white;
+    height: 50%;
+}
+
+.greetDiv {
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(59, 59, 59);
+    padding: 15px 0px;
+    color: white;
+    font-size: 30px;
+    height: 50%;
+}
+i {
+    margin-bottom: 8px;
+}
+#night,
+#day {
+    border: none;
+    background: transparent;
+}
+
+button {
+    margin: auto;
+    font-size: 18px;
+    border-radius: 3px;
+    height: 100% !important;
+}
+
+.input {
+
+    height: 20%;
+}
+
+.calculator {
+    background: rgba(0, 0, 0, 0.85);
+}
+
+.extra {
+    min-height: 0px !important;
+}
+
+input {
+
+    height: 50%;
+    background: transparent;
+    border: none;
+    font-size: 25px;
+    color: white;
+    outline: none;
+    word-wrap: break-word !important;
+    word-break: break-all;
+    hyphens: auto;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#emoji {
+    visibility: hidden;
+}
+
+.textPad {
+    /* background: rgba(0,0,0,0.85); */
+    border: none;
+    height: 80%;
+}
+
+.function {
+    text-align: center;
+    padding: 2px;
+}
+
+.function {
+    text-align: center;
+    padding: 2px;
+}
+
+.row1,
+.row2,
+.row3,
+.row4,
+.row5,
+.row6 {
+    height: 20%;
+}
+
+.function .fButton {
+    background-color: rgb(49, 49, 49);
+    color: white;
+    box-shadow: none;
+    width: 100%;
+
+    border: none;
+
+}
+
+.function .equal {
+    background-color: rgb(0, 129, 227);
+    color: white;
+    width: 100%;
+
+    border: none;
+
+}
+
+.number {
+    text-align: center;
+    padding: 2px;
+
+}
+
+.number .nButton {
+    background-color: rgb(59, 59, 59);
+    color: white;
+    width: 100%;
+    border: none;
+
+}
+
+@media screen and (max-width:576px) {
+    .greetDiv {
+        font-size: 20px;
+    }
+
+    #day,
+    #night {
+        padding: 0px;
+    }
+
+    #history {
+        display: none;
+    }
+}
+
+button:focus,
+.inputWrapper input:focus {
+    outline: none;
+}
+
+.textPad button:active {
+    transform: translateY(1px);
+}
+
+.fButton:hover,
+.row1 .fButton:hover {
+    background-color: rgb(59, 59, 59);
+
+}
+
+.nButton:hover {
+    background-color: rgb(49, 49, 49);
+}
+
+.equal:hover {
+    background: rgb(0, 105, 186);
+}
+
+.history {
+    background: rgba(0, 0, 0, 0.85);
+    border-left: 3px dashed rgb(98, 98, 98);
+    color:white;
+}
